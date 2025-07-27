@@ -1,28 +1,30 @@
 <?php
-// Database setup file
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "hotel_booking";
+// Database setup file for Aiven MySQL
+require_once 'api/config.php';
+
+// Enable CORS
+enableCORS();
+
+// Get environment variables
+$servername = $_ENV['DB_HOST'] ?? 'localhost';
+$username = $_ENV['DB_USER'] ?? 'root';
+$password = $_ENV['DB_PASS'] ?? '';
+$dbname = $_ENV['DB_NAME'] ?? 'defaultdb';
+$port = $_ENV['DB_PORT'] ?? 3306;
+
+echo "<h2>Hotel Database Setup</h2>";
+echo "<p>Connecting to: $servername:$port</p>";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Create database
-$sql = "CREATE DATABASE IF NOT EXISTS hotel_booking";
-if ($conn->query($sql) === TRUE) {
-    echo "Database created successfully<br>";
-} else {
-    echo "Error creating database: " . $conn->error . "<br>";
-}
-
-// Select the database
-$conn->select_db($dbname);
+// Using existing Aiven database: $dbname
+echo "<p>Using database: <strong>$dbname</strong></p>";
 
 // Create users table
 $sql = "CREATE TABLE IF NOT EXISTS users (
@@ -63,7 +65,7 @@ if ($conn->query($sql) === TRUE) {
 
 echo "<br><strong>Database setup completed!</strong><br>";
 echo "You can now use the hotel website.<br>";
-echo "<a href='index.html'>Go to Homepage</a>";
+echo "<a href='/'>Go to Homepage</a>";
 
 $conn->close();
 ?>
