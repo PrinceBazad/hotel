@@ -10,8 +10,8 @@
       "dest": "/api/$1"
     },
     {
-      "src": "/(.*\\.php)$",
-      "dest": "/$1"
+      "src": "/(booking|dashboard|login|logout|setup_database)\\.php",
+      "dest": "/api/$1.php"
     },
     {
       "src": "/(.*)",
