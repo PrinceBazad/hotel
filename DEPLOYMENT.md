@@ -48,10 +48,18 @@
 
 ### For Production (Recommended):
 
-1. **Use PlanetScale (MySQL)**:
+1. **Use PlanetScale (MySQL) - FREE TIER AVAILABLE**:
    - Sign up at [planetscale.com](https://planetscale.com)
-   - Create a new database
-   - Get connection details
+   - Create a new database named `hotel-booking`
+   - Go to "Connect" → "Create password"
+   - Copy the connection details:
+     ```
+     Host: aws.connect.psdb.cloud
+     Username: your-username
+     Password: generated-password
+     Database: hotel-booking
+     Port: 3306
+     ```
 
 2. **Use Railway**:
    - Sign up at [railway.app](https://railway.app)
