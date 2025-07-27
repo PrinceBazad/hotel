@@ -1,0 +1,18 @@
+{
+  "name": "luxury-hotel-website",
+  "version": "1.0.0",
+  "description": "A luxury hotel booking website with PHP backend",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site - no start needed'"
+  },
+  "keywords": ["hotel", "booking", "luxury", "website"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
