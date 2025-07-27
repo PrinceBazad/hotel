@@ -66,3 +66,8 @@ dist/
 *.log
 tmp/
 cache/
+
+# Secret configuration files (keep local only)
+setup_secrets_local.bat
+vercel_local.json
+config_local.php

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel - Your Perfect Stay</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Luxury Hotel</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.php" class="login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Luxury Hotel</h1>
+            <p class="hero-subtitle">Experience the finest hospitality with breathtaking views and world-class amenities</p>
+            <div class="hero-buttons">
+                <a href="#rooms" class="btn btn-primary">Explore Rooms</a>
+                <a href="booking.php" class="btn btn-secondary">Book Now</a>
+            </div>
+        </div>
+        <div class="hero-video">
+            <div class="video-overlay"></div>
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms-section">
+        <div class="container">
+            <h2 class="section-title">Our Luxury Rooms</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <div class="room-placeholder deluxe-room"></div>
+                        <div class="room-price">$199/night</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious room with city view, king-size bed, and modern amenities.</p>
+                        <ul class="room-features">
+                            <li>✓ Free WiFi</li>
+                            <li>✓ Mini Bar</li>
+                            <li>✓ 24/7 Room Service</li>
+                        </ul>
+                        <a href="booking.php?room=deluxe" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <div class="room-placeholder suite-room"></div>
+                        <div class="room-price">$299/night</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Executive Suite</h3>
+                        <p>Luxury suite with separate living area, ocean view, and premium services.</p>
+                        <ul class="room-features">
+                            <li>✓ Ocean View</li>
+                            <li>✓ Separate Living Area</li>
+                            <li>✓ Butler Service</li>
+                        </ul>
+                        <a href="booking.php?room=suite" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <div class="room-placeholder presidential-room"></div>
+                        <div class="room-price">$499/night</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Presidential Suite</h3>
+                        <p>The ultimate luxury experience with panoramic views and exclusive amenities.</p>
+                        <ul class="room-features">
+                            <li>✓ Panoramic Views</li>
+                            <li>✓ Private Balcony</li>
+                            <li>✓ Personal Concierge</li>
+                        </ul>
+                        <a href="booking.php?room=presidential" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <h3>Fine Dining</h3>
+                    <p>World-class restaurants with international cuisine</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏊‍♂️</div>
+                    <h3>Spa & Pool</h3>
+                    <p>Relax and rejuvenate in our luxury spa and pool area</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Transportation</h3>
+                    <p>Airport transfers and city tours available</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Business Center</h3>
+                    <p>Full-service business center with meeting rooms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>📍 123 Luxury Avenue, Paradise City</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>✉️ info@luxuryhotel.com</p>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luxury Hotel</h3>
+                    <p>Your perfect stay awaits at our luxury hotel with world-class amenities and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luxury Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
